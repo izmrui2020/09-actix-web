@@ -11,13 +11,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './common/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MypageComponent } from './pages/mypage/mypage.component';
+import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    MypageComponent
+    MypageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
