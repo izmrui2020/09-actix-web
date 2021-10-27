@@ -1,26 +1,14 @@
-version: "3.7"
+version: "3"
 services:
-  db:
-    image: postgres:12
-    volumes:
-      - ./db/initdb:/docker-entrypoint-initdb.d
-      - db_data:/var/lib/postgres/db_data
-    environment:
-      POSTGRES_PASSWORD: password
-  backend:
-    build:
-      context: ./backend
-      target: "develop-stage"
+  postgresql:
+    image: postgres:12.3-alpine
+    container_name: actix-db
     ports:
-      - "8088:8088"
-    depends_on:
-      - db
-    volumes:
-      - ./backend:/app
-      - cargo-cache:/usr/local/cargo/registry
-      - target-cache:/app/target
-    command: /bin/sh -c "cargo watch -x run"
-volumes:
-  db_data:
-  cargo-cache:
-  target-cache:
+      - 5555:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+      POSTGRES_HOST_AUTH_METHOD: trust
+    hostname: postgres
+    restart: always
