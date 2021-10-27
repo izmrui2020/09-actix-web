@@ -10,7 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 
 import { HeaderComponent } from './common/header/header.component';
-import { HomeComponent } from './pages/home/home.component';
 import { MypageComponent } from './pages/mypage/mypage.component';
 import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
 import { FormComponent } from './pages/form/form.component';
@@ -31,18 +30,23 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTreeModule } from '@angular/material/tree';
+import { NekoShowComponent } from './pages/home/neko-show/neko-show.component';
+import { NekoEditComponent } from './pages/home/neko-edit/neko-edit.component';
+import { NekoListComponent } from './pages/home/neko-list/neko-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
     MypageComponent,
     PageNotFoundComponent,
     FormComponent,
     NavComponent,
     TableComponent,
     DashboardComponent,
+    NekoShowComponent,
+    NekoEditComponent,
+    NekoListComponent,
   ],
   imports: [
     BrowserModule,
