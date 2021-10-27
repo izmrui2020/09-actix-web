@@ -7,15 +7,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 
-import { FormComponent } from './form.component';
+import { NekoNewComponent } from './neko-new.component';
 
-describe('FormComponent', () => {
-  let component: FormComponent;
-  let fixture: ComponentFixture<FormComponent>;
+describe('NekoNewComponent', () => {
+  let component: NekoNewComponent;
+  let fixture: ComponentFixture<NekoNewComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormComponent ],
+      declarations: [ NekoNewComponent ],
       imports: [
         NoopAnimationsModule,
         ReactiveFormsModule,
@@ -29,7 +29,7 @@ describe('FormComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormComponent);
+    fixture = TestBed.createComponent(NekoNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

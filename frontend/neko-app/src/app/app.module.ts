@@ -12,7 +12,6 @@ import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './common/header/header.component';
 import { MypageComponent } from './pages/mypage/mypage.component';
 import { PageNotFoundComponent } from './error/page-not-found/page-not-found.component';
-import { FormComponent } from './pages/form/form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
@@ -33,6 +32,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { NekoShowComponent } from './pages/home/neko-show/neko-show.component';
 import { NekoEditComponent } from './pages/home/neko-edit/neko-edit.component';
 import { NekoListComponent } from './pages/home/neko-list/neko-list.component';
+import { NekoNewComponent } from './pages/home/neko-new/neko-new.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +40,13 @@ import { NekoListComponent } from './pages/home/neko-list/neko-list.component';
     HeaderComponent,
     MypageComponent,
     PageNotFoundComponent,
-    FormComponent,
     NavComponent,
     TableComponent,
     DashboardComponent,
     NekoShowComponent,
     NekoEditComponent,
     NekoListComponent,
+    NekoNewComponent,
   ],
   imports: [
     BrowserModule,

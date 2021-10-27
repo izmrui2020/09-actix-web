@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  selector: 'app-neko-new',
+  templateUrl: './neko-new.component.html',
+  styleUrls: ['./neko-new.component.scss']
 })
-export class FormComponent {
+export class NekoNewComponent {
   addressForm = this.fb.group({
     company: null,
     firstName: [null, Validators.required],
